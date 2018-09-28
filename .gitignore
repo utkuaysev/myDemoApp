@@ -1,4 +1,4 @@
 target/
 .idea/
-myDemoApp.iml
-.idea/workspace.xml
+myDemoApp.iml/
+.idea/workspace.xml/
