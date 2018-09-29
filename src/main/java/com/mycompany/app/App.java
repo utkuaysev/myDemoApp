@@ -42,7 +42,8 @@ public class App {
             String[] inputArraystr;
             String arrayString="";
             while (sc1.hasNext()) {
-                 arrayString+=sc2.next().replaceAll("\\s","")+",";
+                int value2 = Integer.parseInt(sc2.next().replaceAll("\\s", ""));
+                arrayString+=value2+",";
             }
             inputArraystr=arrayString.split(",");
             Integer[] inputArray = new Integer[inputArraystr.length];
