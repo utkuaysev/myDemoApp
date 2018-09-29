@@ -94,12 +94,13 @@ public class App {
 
     public static String method(ArrayList<Integer> arrayList, Integer[] array, boolean divide, String operation) {
         String output = "";
+        int i1=0, i2=0;
+
         if (arrayList == null || array == null || array.length == 0 || arrayList.size() == 0) {
             output = "Arrays can not be null or empty.";
         } else {
             ArrayList<Integer> newArrayList;
             Integer[] newArray;
-            int i1, i2;
             if (divide) {
                 newArrayList = new ArrayList<Integer>();
                 i1 = arrayList.size() / 2;
@@ -157,6 +158,8 @@ public class App {
             }
 
         }
+        if(output.equalsIgnoreCase(""))
+            output = "Arrays can not be null or empty.";
         return output;
     }
 }
