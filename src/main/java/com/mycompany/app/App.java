@@ -23,8 +23,8 @@ public class App {
         get("/", (req, res) -> "Hello, World");
 
         post("/compute", (req, res) -> {
-            //System.out.println(req.queryParams("input1"));
-            //System.out.println(req.queryParams("input2"));
+            System.out.println(req.queryParams("input1"));
+            System.out.println(req.queryParams("input2"));
 
             String input1 = req.queryParams("input1");
             java.util.Scanner sc1 = new java.util.Scanner(input1);
@@ -42,7 +42,7 @@ public class App {
             String[] inputArraystr;
             String arrayString="";
             while (sc1.hasNext()) {
-                 arrayString+=sc1.nextInt()+",";
+                 arrayString+=sc2.next().replaceAll("\\s","")+",";
             }
             inputArraystr=arrayString.split(",");
             Integer[] inputArray = new Integer[inputArraystr.length];
