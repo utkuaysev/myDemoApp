@@ -1,13 +1,25 @@
 <title>My application deployed automatically in heroku</title>
-  <h1>Hello, World!</h1>
-    Result is {{result}}
+<h1>Hello, World!</h1>
+Result is {{result}}
 
 
-  <form action="compute" method="post">
-        <textarea name="input1" rows="10" cols="30"></textarea>
-        <textarea name="input2" rows="10" cols="30"></textarea>
-        <textarea name="input3" rows="5" cols="15"></textarea>
-        <textarea name="input4" rows="5" cols="15"></textarea>
-        <br>
-        <input type="submit">
-  </form>
+<form action="compute" method="post">
+    Fill below for first array.Each row for each element:<br>
+    <textarea name="input1" rows="10" cols="30"></textarea>
+    <br>
+    Fill below for second array.Each row for each element:<br>
+    <textarea name="input2" rows="10" cols="30"></textarea>
+    <br>
+    Specify that arrays will be divided into two and the process will be done for first part of arrays or not with true or false.(Every input different from "true" will be implemented as false):<br>
+    <textarea name="input3" rows="5" cols="15"></textarea>
+    <br>
+    Specify that the arithmetical operation.("sum" for summation,"multiply" for multiplication,"divide" for division,"subtract" for subtraction)<br>
+    <textarea name="input4" rows="5" cols="15"></textarea>
+    <br>
+    <input type="submit">
+</form>
+<br>
+The project is doing given arithmetical operations for given two array.If size of arrays are different do operations for less size array.Also,divide both of them and do the process for first part of them
+according to input.The output is in this format:"number1","number2","number3"
+
+

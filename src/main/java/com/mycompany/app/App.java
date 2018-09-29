@@ -133,7 +133,7 @@ public class App {
                     else
                         output += (newArrayList.get(i) + newArray[i]) + "";
 
-                } else if (operation.equalsIgnoreCase("Subtraction")) {
+                } else if (operation.equalsIgnoreCase("Subtract")) {
                     if (i != min - 1)
                         output += newArrayList.get(i) - newArray[i] + ",";
                     else
@@ -145,7 +145,7 @@ public class App {
                     else
                         output += newArrayList.get(i) * newArray[i] + "";
 
-                } else if (operation.equalsIgnoreCase("Division")) {
+                } else if (operation.equalsIgnoreCase("divide")) {
                     if (i != min - 1)
                         output += newArrayList.get(i) / newArray[i] + ",";
                     else

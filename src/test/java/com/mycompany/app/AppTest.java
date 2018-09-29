@@ -21,7 +21,7 @@ public class AppTest
     }
 
     public void testWhenDivideIsFalseShouldNotDivideAndDivisionTheseTwoArrays() {
-        assertEquals(new App().method(arrayList, array, false, "division"), "0,0,8");
+        assertEquals(new App().method(arrayList, array, false, "divide"), "0,0,8");
     }
 
     public void testWhenDivideIsFalseShouldNotDivideAndMultiplyTheseTwoArrays() {
@@ -29,7 +29,7 @@ public class AppTest
     }
 
     public void testWhenDivideIsFalseShouldNotDivideAndSubtractionTheseTwoArrays() {
-        assertEquals(new App().method(arrayList, array, false, "subtraction"), "-4,-3,7");
+        assertEquals(new App().method(arrayList, array, false, "subtract"), "-4,-3,7");
     }
 
     public void testWhenDivideIsTrueShouldNotDivideAndSumTheseTwoArrays() {
@@ -37,7 +37,7 @@ public class AppTest
     }
 
     public void testWhenDivideIsTrueShouldNotDivideAndSubtractTheseTwoArrays() {
-        assertEquals(new App().method(arrayList, array, true, "subtraction"), "-4");
+        assertEquals(new App().method(arrayList, array, true, "subtract"), "-4");
     }
 
     public void testWhenDivideIsTrueShouldNotDivideAndMultiplyTheseTwoArrays() {
@@ -45,16 +45,16 @@ public class AppTest
     }
 
     public void testWhenDivideIsTrueShouldNotDivideAndDivisionTheseTwoArrays() {
-        assertEquals(new App().method(arrayList, array, true, "division"), "0");
+        assertEquals(new App().method(arrayList, array, true, "divide"), "0");
     }
 
     public void testWhenDivideIsTrueShouldNotDivideAndDivisionTheseTwoArraysToCheckWhichArrayHasLessSize() {
-        assertEquals(new App().method(arrayList, array2, false, "division"), "0,0");
+        assertEquals(new App().method(arrayList, array2, false, "divide"), "0,0");
     }
 
     public void testEmptyArray() {
         ArrayList<Integer> emptyArray = new ArrayList<>();
-        assertEquals(new App().method(emptyArray, array, true, "division"), "Arrays can not be null or empty.");
+        assertEquals(new App().method(emptyArray, array, true, "divide"), "Arrays can not be null or empty.");
     }
 
     public void testNull() {
